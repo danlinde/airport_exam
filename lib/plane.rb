@@ -22,8 +22,8 @@ class Plane
 		@itself
 	end
 
-	def permission_to_take_off_from air_traffic_controller
-		air_traffic_controller.permission
+	def request_permission_to_take_off_from air_traffic_controller
+		@permission_to_take_off_from = air_traffic_controller.permission
 	end
 
 	def take_off_from runway, airport
