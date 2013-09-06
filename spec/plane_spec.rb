@@ -13,7 +13,6 @@ describe Plane do
 
 	it 'can request permission to take off_from' do
 		air_traffic_controller = double(:air_traffic_controller, {:permission => true})
-		plane.request_permission_to_take_off_from(air_traffic_controller)
 		expect(plane.permission_to_take_off_from).to be_true
 	end
 
